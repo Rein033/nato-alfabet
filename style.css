@@ -1,0 +1,18 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; }
+.kaart { display: flex; align-items: center; gap: 10px; background: var(--field); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; cursor: pointer; text-align: left; }
+.kaart:hover { border-color: var(--accent); }
+.kaart b { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none; color: var(--accent); background: color-mix(in srgb, var(--accent) 18%, transparent); font-size: 1.05rem; }
+.kaart span { font-weight: 600; font-size: .92rem; }
+.uit { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; min-height: 40px; }
+.uit .w { background: var(--field); border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; font-weight: 600; font-size: .9rem; }
+.uit .w i { font-style: normal; color: var(--accent); margin-right: 5px; }
+.uit .sp { width: 14px; }
+.uit .x { color: var(--muted); padding: 4px 4px; }
+.vraag { font-size: 3.2rem; font-weight: 800; text-align: center; margin: 14px 0 10px; color: var(--accent); letter-spacing: .02em; }
+.keuzes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.keuzes button { border: 1px solid var(--line); background: var(--field); border-radius: 12px; padding: 12px; font-weight: 700; cursor: pointer; font-size: 1rem; }
+.keuzes button:hover:not(:disabled) { border-color: var(--accent); }
+.keuzes button.goed { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 15%, var(--field)); }
+.keuzes button.fout { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 15%, var(--field)); }
+.fb { min-height: 28px; text-align: center; font-weight: 700; margin-top: 10px; }
+#antw { text-align: center; font-size: 1.1rem; }
